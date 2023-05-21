@@ -1,0 +1,326 @@
+.how_it_works {
+  margin: 0 0 60px;
+  @media (max-width: 1550px) {
+    margin: 0 0 50px;
+  }
+  @media (max-width: 1279px) {
+    margin: 0 0 0 0;
+  }
+  ul{
+    margin: 30px 0 0 0;
+    @media (max-width: 1550px) {
+      margin: 20px 0 0 0;
+    }
+    li{
+      float: left;
+      margin: 0 30px 0 0;
+      width: 360px;
+      @media (max-width: 1550px) {
+        width: 268px;
+        margin: 0 20px 0 0;
+      }
+      @media (max-width: 1279px) {
+        width: 298px;
+        margin: 0 18px 40px 0;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+      &:last-child{
+        margin: 0 0 0 0
+      }
+      .title{
+        width: 100%;
+        height: 110px;
+        border: 2px solid #D7CCC8;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        margin: 0 0 32px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 7px;
+        @media (max-width: 767px) {
+          height:64px;
+          padding: 0 0;
+          margin: 0 0 10px 0;
+        }
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+        }
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+        }
+        h4{
+          @include font;
+          font-size: 22px;
+          font-weight: 500;
+          text-align: center;
+          @media (max-width: 1550px) {
+            font-size: 16px;
+          }
+          @media (max-width: 1279px) {
+            font-size: 22px;
+            width: 270px;
+          }
+          @media (max-width: 767px) {
+            font-size: 16px;
+          }
+        }
+      }
+      .text{
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid #D7CCC8;
+        box-sizing: border-box;
+        padding: 25px 25px 25px 25px;
+        position: relative;
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+        }
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+        }
+        p{
+          @include font;
+          display: block;
+          font-weight: 400;
+          margin: 0 0 15px 0;
+          @media (max-width: 1550px) {
+            font-size: 16px;
+          }
+          @media (max-width: 767px) {
+            font-size: 14px;
+          }
+          &:last-child{
+            margin: 0 0 0 0;
+          }
+        }
+        ul{
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          margin: 0 0 0 0;
+          li{
+            @include font;
+            display: block;
+            font-weight: 400;
+            width: 100%;
+            background-image: url(../images/ico-how-li.png);
+            background-size: 10px 10px;
+            background-position: 0 50%;
+            background-repeat: no-repeat;
+            padding: 0 0 0 25px;
+            box-sizing: border-box;
+            @media (max-width: 1550px) {
+              font-size: 16px;
+            }
+            @media (max-width: 1279px) {
+              margin: 0 0 10px;
+              font-size: 16px;
+            }
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      &:nth-child(1){
+        .title{
+          &:before{
+            content: '';
+            width: 170px;
+            height: 104px;
+            left: -5px;
+            top: -5px;
+            border-left: 8px solid $green;
+            border-top: 8px solid $green;
+            display: block;
+            position: absolute;
+            @media (max-width: 767px) {
+              height: 58px;
+            }
+          }
+          &:after {
+            right: -5px;
+            bottom: -5px;
+            border-right: 8px solid #fff;
+            border-bottom: 8px solid #fff;
+          }
+        }
+        .text{
+          &:before{
+            width: 205px;
+            height: 56px;
+            right: -5px;
+            bottom: -5px;
+            border-right: 8px solid $dark_prim;
+            border-bottom: 8px solid $dark_prim;
+            display: block;
+            position: absolute;
+          }
+          &:after {
+            width: 0px;
+            height:104px;
+            left: -5px;
+            bottom: -5px;
+            border-left: 8px solid #fff;
+            border-bottom: 8px solid #fff;
+          }
+        }
+      }
+      &:nth-child(2){
+        @media (max-width: 1279px) {
+          margin: 0 0 40px 0;
+        }
+        @media (max-width: 767px) {
+          margin: 0 0 30px 0;
+        }
+        .title {
+          &:before{
+            right: 32px;
+            left: auto;
+            top: -6px;
+            width: 180px;
+            height: 0px;
+            border-top: 8px solid $green;
+            @media (max-width: 767px) {
+              height: 58px;
+            }
+          }
+          &:after{
+            right: -5px;
+            bottom: -5px;
+            top: auto;
+            left: auto;
+            width: 1px;
+            height: 60px;
+            border-right: 8px solid #fff;
+          }
+        }
+        .text {
+          &:before{
+            left: -5px;
+            top: 100px;
+            width: 1px;
+            height: 104px;
+            border-left: 8px solid #fff;
+            border-top: 8px solid #fff;
+          }
+          &:after{
+            left: -5px;
+            bottom: -5px;
+            top: auto;
+            width: 174px;
+            height: 30px;
+            border-left: 8px solid $dark_prim;
+            border-bottom: 8px solid $dark_prim;
+          }
+        }
+      }
+      &:nth-child(3){
+        .title {
+          &:before{
+            left: -5px;
+            bottom: -5px;
+            width: 100px;
+            height: 105px;
+            border-left: 8px solid $green;
+            border-bottom: 8px solid $green;
+            @media (max-width: 767px) {
+              height: 58px;
+            }
+          }
+          &:after{
+            right: -5px;
+            top: 0px;
+            width: 0;
+            height: 50px;
+            border-left: 8px solid #fff;
+            border-bottom: 8px solid #fff;
+          }
+        }
+        .text {
+          &:before{
+            width: 205px;
+            height: 56px;
+            right: -5px;
+            bottom: -5px;
+            border-right: 8px solid $dark_prim;
+            border-bottom: 8px solid $dark_prim;
+            display: block;
+            position: absolute;
+          }
+          &:after {
+            width: 56px;
+            height: 205px;
+            right: -5px;
+            top: -5px;
+            border-right: 8px solid #fff;
+            border-top: 8px solid #fff;
+          }
+        }
+      }
+      &:nth-child(4){
+        @media (max-width: 1279px) {
+          margin: 0 0 40px 0;
+        }
+        @media (max-width: 767px) {
+          margin: 0 0 30px 0;
+        }
+        .title {
+          &:before{
+            right: -5px;
+            bottom: -5px;
+            width: 42px;
+            height: 105px;
+            border-right: 8px solid $green;
+            border-bottom: 8px solid $green;
+            @media (max-width: 767px) {
+              height: 58px;
+            }
+          }
+          &:after{
+            right: 45px;
+            bottom: -5px;
+            width: 175px;
+            height: 0px;
+            border-right: 8px solid #fff;
+            border-bottom: 8px solid #fff;
+          }
+        }
+        .text {
+          &:before{
+            right: -5px;
+            top: 100px;
+            width: 1px;
+            height: 104px;
+            border-right: 8px solid #fff;
+            border-top: 8px solid #fff;
+          }
+          &:after{
+            left: -5px;
+            bottom: -5px;
+            top: auto;
+            width: 174px;
+            height: 30px;
+            border-left: 8px solid $dark_prim;
+            border-bottom: 8px solid $dark_prim;
+          }
+        }
+      }
+    }
+  }
+}

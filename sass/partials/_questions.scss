@@ -1,0 +1,138 @@
+.questions{
+  .question_number{
+    display: block;
+    width: 1230px;
+    height: 119px;
+    border: 2px solid $prim;
+    border-left: 8px solid $dark_prim;
+    box-sizing: border-box;
+    margin: 0 0 0 100px;
+    padding: 30px 30px 30px 30px;
+    position: relative;
+    @media (max-width: 1550px) {
+      width: 1030px;
+      padding: 20px 20px 20px 20px;
+      margin: 0 0 0 40px;
+    }
+    @media (max-width: 1279px) {
+      width:75%;
+      margin: 0 0 0 0;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+  		width: 100%;
+      height: 270px;
+      padding: 15px 15px 15px 15px;
+      border-left: 5px solid $dark_prim;
+  	}
+    p{
+      @include font;
+      width: 600px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 130%;
+      float: left;
+      margin: 0 90px 0 0;
+      @media (max-width: 1550px) {
+        width:350px;
+        font-size: 20px;
+      }
+      @media (max-width: 767px) {
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+    form {
+      position: absolute;
+      top: 30px;
+      right: -302px;
+      width: 780px;
+      @media (max-width: 1550px) {
+        right: auto;
+        left: 440px;
+      }
+      @media (max-width: 1279px) {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        width: 100%;
+      }
+      fieldset{
+        display: block;
+
+        input {
+          @include font;
+          color: #000;
+          float: left;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 130%;
+          border: none;
+          width: 220px;
+          margin: 15px 100px 0 0;
+          padding: 0 8px 0 8px;
+          box-sizing: border-box;
+          border-bottom: 2px solid $border;
+          @media (max-width: 767px) {
+            margin: 15px auto 0;
+            width: 230px;
+            float: none;
+            display: block;
+        	}
+          // &:focus{
+          //   border-bottom: none;
+          // }
+        }
+        button {
+          @include font;
+          @include anim;
+          padding: 0 0 0 0;
+          box-sizing: border-box;
+          font-weight: 500;
+          float: left;
+          width: 320px;
+          height: 56px;
+          text-align: center;
+          line-height: 56px;
+          background: $green;
+          color: #ffffff;
+          margin: 0 0 0 0;
+          box-shadow: 0px 11px 15px rgba(0, 148, 134, 0.27);
+          border-radius: 3px;
+          position: relative;
+          border: none;
+          z-index: 4;
+          cursor: pointer;
+          @media (max-width: 1550px) {
+            width: 300px;
+          }
+          @media (max-width: 1279px) {
+            width: 280px;
+            height: 54px;
+            line-height: 54px;
+            font-size: 16px;
+            float: right;
+            margin: -25px 0 0 280px;
+          }
+          @media (max-width: 767px) {
+            margin: 30px auto 0;
+            float: none;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            line-height: 48px;
+            width: 230px;
+            height: 48px;
+        	}
+          &:hover{
+            box-shadow: 0px 4px 15px rgba(0, 148, 134, 0.6), 0px 11px 15px rgba(0, 148, 134, 0.27);
+          }
+          &:active{
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

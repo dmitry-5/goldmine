@@ -1,0 +1,375 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1">
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link rel="stylesheet" href="sass/fonts.css" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>goldmine</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="popup_catalog popup">
+			<div class="blocker" onclick="hidePopup()"></div>
+			<div class="flex">
+				<div class="box">
+					<span class="close">
+						<img src="./images/ico-close.png" alt="close">
+					</span>
+					<h3>
+						Введите Ваши данные и мы вышлем Вам полный каталог предложений на электронную почту
+					</h3>
+					<form>
+						<fieldset>
+							<input class="name" type="text" placeholder="Ваше имя">
+							<input class="email" type="text" placeholder="Ваше e-mail">
+							<button type="button" name="button">Отправить</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup_thnx popup">
+			<div class="blocker" onclick="hidePopup()"></div>
+			<div class="flex">
+				<div class="box">
+					<span class="close">
+						<img src="./images/ico-close.png" alt="close">
+					</span>
+					<h3>
+						Спасибо за ваше обращение, мы получили вашу заявку.
+						<span>
+							Мы отправим Вам актуальный каталог в ближайшее время.
+						</span>
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="popup_request popup">
+			<div class="blocker" onclick="hidePopup()"></div>
+			<div class="flex">
+				<div class="box">
+					<span class="close">
+						<img src="./images/ico-close.png" alt="close">
+					</span>
+					<h3>
+						Спасибо за ваше обращение, мы получили вашу заявку.
+						<span>
+							Менеджер свяжется с вами в ближайшее время.
+						</span>
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="popup_map popup">
+			<div class="blocker"></div>
+			<div class="flex">
+				<div class="box">
+					<span class="close">
+						<img src="./images/ico-close.png" alt="close">
+					</span>
+					<img src="./images/img-footer-map.png" alt="map">
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="side">
+				<div class="menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="language">
+					<span>ua</span>
+					<div class="drop">
+						<span>en</span>
+						<span>ru</span>
+					</div>
+				</div>
+				<div class="arrow_up">
+					<img src="./images/ico-arr.png" alt="arr">
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Виды и наличие аппартаментов</a>
+					</li>
+					<li>
+						<a href="#">Инфраструктура</a>
+					</li>
+					<li>
+						<a href="#">Преимущества</a>
+					</li>
+					<li>
+						<a href="#">Управляющая компания</a>
+					</li>
+					<li>
+						<a href="#">Ход строительства</a>
+					</li>
+					<li>
+						<a href="#">Часто задаваемые вопросы</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="contacts">
+					<a href="#" class="fb"></a>
+					<a href="#" class="insta"></a>
+					<a href="tel:+995577556225" class="number">+99 557 755 62 25</a>
+				</div>
+				<div class="language">
+					<span>en</span>
+					<span>ru</span>
+					<span class="active">ua</span>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div id="content">
+				<section class="fv_slider">
+					<ul class="slider">
+						<li>
+							<img src="./images/img-fv-slide-01.png" alt="#">
+						</li>
+						<li>
+							<img src="./images/img-fv-slide-02.png" alt="#">
+						</li>
+						<li>
+							<img src="./images/img-fv-slide-03.png" alt="#">
+						</li>
+					</ul>
+					<ul class="slider-mob">
+						<li>
+							<img src="./images/img-fv-slide-04.png" alt="#">
+						</li>
+						<li>
+							<img src="./images/img-fv-slide-05.png" alt="#">
+						</li>
+						<li>
+							<img src="./images/img-fv-slide-06.png" alt="#">
+						</li>
+					</ul>
+					<div class="fv_side">
+						<div class="logo_frame">
+							<div class="logo">
+								<a href="#">
+									<img src="./images/logo.png" alt="logo">
+								</a>
+								<h1>goldmine</h1>
+							</div>
+						</div>
+						<div class="text">
+							<h2>
+								Новый проект
+								от GoldMine в Грузии
+							</h2>
+							<p>
+								Продажа апартаментов
+								</br>
+								на горнолыжном курорте Goderdzi Pass
+							</p>
+						</div>
+						<div class="btns">
+							<h3>
+								Семейный комплекс
+								</br>
+								апартаментов клубного типа
+							</h3>
+							<span>Получить полный каталог</span>
+						</div>
+					</div>
+					<div class="number">
+							<span><a href="tel:+995577556225">+99 557 755 62 25</a></span>
+					</div>
+				</section>
+				<section class="apt">
+					<div class="layout">
+						<h3>Виды апартаментов</h3>
+						<div class="info">
+							<div class="left_slider">
+								<ul class="slider">
+									<li>
+										<img src="./images/img-apt-slide-01.png" alt="#">
+									</li>
+									<li>
+										<img src="./images/img-apt-slide-02.png" alt="#">
+									</li>
+								</ul>
+								<div class="bottom">
+									<h4>В апартаментах:</h4>
+									<p>кухня, спальня, санузел, бытовая техника, мебель, сантехника, декоративные аксессуары</p>
+								</div>
+							</div>
+							<div class="right_plan">
+								<div class="img-holder">
+									<img src="./images/img-apt-plan.png" alt="apt">
+								</div>
+								<div class="bottom">
+									<h4>Площадь, м2:</h4>
+									<p>от 30,20 до 30,48 м2</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="free_apt">
+					<div class="layout">
+						<h3>Доступные апартаменты</h3>
+						<div class="img-holder">
+							<img src="./images/img-free-apt.png" alt="apt">
+						</div>
+					</div>
+				</section>
+				<section class="infra">
+					<div class="layout">
+						<h3>Инфраструктура комплекса</h3>
+						<div class="info">
+							<div class="left_text">
+								<h4>SPA</h4>
+								<p>3 бани: хамам, финская баня, русская баня, криосауна, бассейн с переливом на улицу.</p>
+								<h4>Фитнес-зал</h4>
+								<p>200м2 профессиональных тренажеров.</p>
+								<h4>Детская игровая комната</h4>
+								<p>Мягкая игровая комната с игровыми элементами серии 4Kids и интерактивными развивающими панелями - для самых маленьких.</p>
+								<h4>Ресторан</h4>
+								<p>Место отдыха с грузинской и европейской кухней, отличным вином и превосходной атмосферой.</p>
+								<h4>Конференц-зал</h4>
+								<p>Удобное пространство для деловых встреч со 150тью посадочными местами. </p>
+								<h4>Подземная парковка</h4>
+								<p>Свой или арендованный автомобиль всегда рядом на сухой и охраняемой парковке. </p>
+							</div>
+							<div class="right_slider">
+								<ul class="slider">
+									<li>
+										<img src="./images/img-apt-slide-01.png" alt="#">
+									</li>
+									<li>
+										<img src="./images/img-apt-slide-02.png" alt="#">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info_bottom">
+							<div class="text">
+								<h4>Инвестируйте в недвижимость на одном из самых развивающихся горнолыжных курортов Грузии и получите:</h4>
+								<ul>
+									<li>
+										удобство, уют и домашний комфорт личных апартаментов в сердце грузинских гор;
+									</li>
+									<li>
+										недвижимость, которая окупит сама себя и станет источником пассивного дохода в будущем;
+									</li>
+									<li>
+										чистейший горный воздух, вкуснейшую грузинскую кухню, незабываемый местный колорит и природу.
+									</li>
+								</ul>
+							</div>
+							<div class="catalog">
+								<p>Здесь вы можете скачать актуальный каталог апартаментов GoldMain</p>
+								<span>Получить полный каталог</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="reasons">
+					<div class="layout">
+						<h3>
+							<span>
+								Причины выбрать комплекс GoldMine
+								в Годердзи местом для ваших инвестиций
+							</span>
+						</h3>
+						<div class="invest">
+							<h4>
+								Приобретая апартаменты GoldMine, вы инвестируете в недвижимость cо стабильным гарантированным доходом
+							</h4>
+							<div class="invest_img"></div>
+						</div>
+						<ul>
+							<li>
+								<h5>350м</h5>
+								<p>от подъемника. Отличное месторасположение и  прямой выход на лыжную трассу.</p>
+							</li>
+							<li>
+								<h5>112 км</h5>
+								<p>от международного аэропорта Батуми. Всего три часа езды - и вы наслаждаетесь природой и отдыхом в горах Грузии.</p>
+							</li>
+							<li>
+								<h5>2364 м</h5>
+								<p>самая высокая точка горнолыжных трасс в Годердзи.</p>
+							</li>
+							<li>
+								<h5>-3 °C -15 °C</h5>
+								<p>идеальная погода для катания на лыжах и борде.</p>
+							</li>
+							<li>
+								<h5>С ноября по май</h5>
+								<p>открыт официально горнолыжный сезон в Грузии.</p>
+							</li>
+							<li>
+								<h5>Ски-пассы</h5>
+								<p>Очень демократичные цены на катание даже в высокий сезон.</p>
+							</li>
+							<li>
+								<h5>Грузинская кухня</h5>
+								<p>Баранина, молочная кухня, чирбули с томатами и орехами - всё это ждет вас в маленьких закусочных на самом склоне трасс.</p>
+							</li>
+							<li>
+								<h5>Трассы</h5>
+								<p>Общая протяженность трасс составляет 7 километров, но курорт быстро развивается. Трассы широкие и малозагруженные. Есть зоны для фрирайда и бэккантри.</p>
+							</li>
+							<li>
+								<h5>3 новых подъемника:</h5>
+								<p>бугель, восьмиместная гондола и шестиместный кресельник, кресла защищены от ветра.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="questions">
+					<div class="layout">
+						<div class="question_number">
+							<p>
+								Остались вопросы?
+								</br>
+								Оставьте ваш номер телефона и менеджер свяжется с вами.
+							</p>
+							<form>
+								<fieldset>
+									<input id="phone" type="text" name="" placeholder="номер телефона">
+									<button type="button" name="button">Получить консультацию</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="layout">
+				<span class="map">
+					Карта трасс Goderdzi
+				</span>
+				<div class="right">
+					<p> Copyright © GoldMine 2021  Все права защищены</p>
+					<span>
+						Powered by
+						<a target="_blank" rel="noopener noreferrer" href="https://scrit-group.com/">
+							<strong>ScriTGroup</strong>
+						</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

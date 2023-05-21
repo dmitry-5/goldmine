@@ -1,0 +1,193 @@
+.construction {
+  margin: 0 0 40px;
+  @media (max-width: 1550px) {}
+  @media (max-width: 1279px) {}
+  @media (max-width: 767px) {}
+  h3 {
+    @media (max-width: 767px) {
+      margin: 0 0 30px;
+    }
+  }
+  .slider-cover{
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 45px 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 1550px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 1279px) {
+      padding: 0 40px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 0 30px;
+      padding: 0;
+    }
+    .slider {
+      display: block;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      overflow:hidden;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 320px;
+      margin: -160px 0 0 0;
+      border: 7px solid $prim;
+      box-sizing: border-box;
+      z-index: 1;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  .filter{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 0;
+    padding: 0 65px 40px;
+    box-sizing: border-box;
+    @media (max-width: 1550px) {
+      padding: 0 20px 40px;
+    }
+    @media (max-width: 1279px) {
+      padding: 0 0 30px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 0 20px;
+    }
+    a {
+      width: 248px;
+      height: 56px;
+      float: left;
+      margin: 0 40px 0 0;
+      text-align: center;
+      background: $prim;
+      box-shadow: $shadow;
+      border-radius: 3px;
+      @media (max-width: 1550px) {
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+        width: 200px;
+        margin: 0 20px 0 0;
+      }
+      @media (max-width: 1279px) {
+        margin: 0 15px 15px 0;
+        width: 188px;
+      }
+      @media (max-width: 767px) {
+        height: 56px;
+        line-height: 1;
+        margin: 0 25px 15px 0;
+        width: 160px;
+        display: table;
+      }
+      &:hover,
+      &.active{
+        background-color: $dark_prim;
+        span{
+          color: #ffffff;
+        }
+      }
+      &:last-child{
+        margin: 0 0 0 0;
+      }
+      &:nth-child(2n){
+        @media (max-width: 767px) {
+          margin: 0 0 15px;
+        }
+      }
+      span{
+        @include font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 56px;
+        text-align: center;
+        @media (max-width: 1550px) {
+          line-height: 44px;
+          font-size: 14px;
+        }
+        @media (max-width: 767px) {
+          display: table-cell;
+          vertical-align: middle;
+          line-height: 1;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .text {
+    display: block;
+    overflow: hidden;
+    width: calc(100% - 130px);
+    margin: 0 65px 0;
+    padding: 4px 50px 14px 50px;
+    box-sizing: border-box;
+    border: 2px solid $border;
+    border-top: none;
+    border-left: 8px solid $dark_prim;
+    border-right: 8px solid $dark_prim;
+    @media (max-width: 1550px) {
+      width:100%;
+      margin: 0 0 0;
+      padding: 4px 30px 14px 30px;
+    }
+    @media (max-width: 1279px) {
+      padding: 4px 40px 14px 30px;
+    }
+    @media (max-width: 767px) {
+      padding: 4px 14px 14px 14px;
+    }
+    p{
+      @include font;
+      font-weight: 400;
+      &:first-child{
+        float: left;
+        width: 580px;
+        @media (max-width: 1550px) {
+          width: 520px;
+          font-size: 16px;
+        }
+        @media (max-width: 1279px) {
+          font-size: 16px;
+          float: none;
+          margin: 0 0 8px 0;
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+      &:last-child{
+        float: right;
+        width: 556px;
+        @media (max-width: 1550px) {
+          width: 480px;
+          font-size: 16px;
+        }
+        @media (max-width: 1279px) {
+          font-size: 16px;
+          float: none;
+          margin: 0 0 8px 0;
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

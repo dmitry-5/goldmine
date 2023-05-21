@@ -1,0 +1,24 @@
+// @media (max-width: 1550px) {}
+// @media (max-width: 1279px) {}
+// @media (max-width: 767px) {}
+@import "global/reset.scss";
+@import "global/mixins.scss";
+@import "global/var.scss";
+@import "global/styles.scss";
+
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/slick.scss";
+@import "partials/slick_changes.scss";
+@import "partials/popup.scss";
+@import "partials/fv_slider.scss";
+@import "partials/apt.scss";
+@import "partials/free_apt.scss";
+@import "partials/infra.scss";
+@import "partials/reasons.scss";
+@import "partials/questions.scss";
+@import "partials/contact_page.scss";
+@import "partials/faq.scss";
+@import "partials/manage.scss";
+@import "partials/how_it_works.scss";
+@import "partials/construction.scss";

@@ -1,0 +1,23 @@
+.free_apt {
+  .img-holder{
+    margin: 0 100px 0 100px;
+    @media (max-width: 1550px) {
+      margin: 0 18px 0 18px;
+    }
+    @media (max-width: 1279px) {
+  		margin: 0;
+      height:442px;
+      overflow: scroll;
+      position: relative;
+  	}
+    img{
+      @include img;
+      @media (max-width: 1279px) {
+        height: 442px;
+        width:1096px;
+        max-width: none;
+        position:absolute;
+    	}
+    }
+  }
+}
